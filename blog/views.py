@@ -8,4 +8,5 @@ from .models import Post
 
 class PostList(generic.ListView):
     queryset = Post.objects.filter(status=1) # 1 is published, this will stop drafts from being shown
-    template_name = "post_list.html"
+    template_name = "blog/index.html"
+    paginate_by = 6
