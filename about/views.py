@@ -26,7 +26,7 @@ def about_me(request):
             collaborate_form.save()
             messages.add_message(
                 request, messages.SUCCESS,
-                'Collaboration request submitted'
+                'Collaboration request submitted.'
             )
             collaborate_form = CollaborateForm()
 
